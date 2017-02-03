@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
         return true
     }
 
@@ -44,3 +46,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+ Things we will learn in this lesson: 
+ Using Software Development Keys(SDKs) - Cocoapods
+ Setting up Firebase, and integration
+ User registration
+ Live updates from Firebase. 
+ Learn a whole lot more about creaeting apps 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */

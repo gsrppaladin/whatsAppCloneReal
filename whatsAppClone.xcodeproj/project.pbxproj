@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDCC3BE5FDBA407BB98F1066 /* Pods_whatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */; };
 		FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C11E42CD5700358DDC /* AppDelegate.swift */; };
 		FEF601C41E42CD5700358DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C31E42CD5700358DDC /* ViewController.swift */; };
 		FEF601C71E42CD5700358DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF601C51E42CD5700358DDC /* Main.storyboard */; };
 		FEF601C91E42CD5700358DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF601C81E42CD5700358DDC /* Assets.xcassets */; };
 		FEF601CC1E42CD5700358DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF601CA1E42CD5700358DDC /* LaunchScreen.storyboard */; };
+		FEF601D41E42D42800358DDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEF601D31E42D42800358DDC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsAppClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED43D3314C9E644EDE87AEF /* Pods-whatsAppClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.release.xcconfig"; sourceTree = "<group>"; };
+		FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.debug.xcconfig"; sourceTree = "<group>"; };
 		FEF601BE1E42CD5700358DDC /* whatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF601C11E42CD5700358DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEF601C31E42CD5700358DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FEF601C81E42CD5700358DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF601CB1E42CD5700358DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEF601CD1E42CD5700358DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF601D31E42D42800358DDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCC3BE5FDBA407BB98F1066 /* Pods_whatsAppClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1416A7C05625E5F8B4861C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74D092FB79D12C84A00AFB8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */,
+				5ED43D3314C9E644EDE87AEF /* Pods-whatsAppClone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FEF601B51E42CD5600358DDC = {
 			isa = PBXGroup;
 			children = (
 				FEF601C01E42CD5700358DDC /* whatsAppClone */,
 				FEF601BF1E42CD5700358DDC /* Products */,
+				74D092FB79D12C84A00AFB8E /* Pods */,
+				1416A7C05625E5F8B4861C67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				FEF601C81E42CD5700358DDC /* Assets.xcassets */,
 				FEF601CA1E42CD5700358DDC /* LaunchScreen.storyboard */,
 				FEF601CD1E42CD5700358DDC /* Info.plist */,
+				FEF601D31E42D42800358DDC /* GoogleService-Info.plist */,
 			);
 			path = whatsAppClone;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF601D01E42CD5700358DDC /* Build configuration list for PBXNativeTarget "whatsAppClone" */;
 			buildPhases = (
+				38F5BBC5D789F14CC9CB356C /* [CP] Check Pods Manifest.lock */,
 				FEF601BA1E42CD5700358DDC /* Sources */,
 				FEF601BB1E42CD5700358DDC /* Frameworks */,
 				FEF601BC1E42CD5700358DDC /* Resources */,
+				E506B331364653D3B20E41DC /* [CP] Embed Pods Frameworks */,
+				937390B5202159B971793A48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF601CC1E42CD5700358DDC /* LaunchScreen.storyboard in Resources */,
+				FEF601D41E42D42800358DDC /* GoogleService-Info.plist in Resources */,
 				FEF601C91E42CD5700358DDC /* Assets.xcassets in Resources */,
 				FEF601C71E42CD5700358DDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F5BBC5D789F14CC9CB356C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		937390B5202159B971793A48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E506B331364653D3B20E41DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEF601BA1E42CD5700358DDC /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		FEF601D11E42CD5700358DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4LBT7283WA;
@@ -272,6 +352,7 @@
 		};
 		FEF601D21E42CD5700358DDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED43D3314C9E644EDE87AEF /* Pods-whatsAppClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4LBT7283WA;
