@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60DBE8BDC905ABD467A02BBEA42095CACD4DE958",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60DBE8BDC905ABD467A02BBEA42095CACD4DE958" : 9223372036854775807,
+    "029A907A7603792637D6CB07A635C9A7A89CCADF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CAA678E6-FAF1-485A-BD86-1E4BB9329A0B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60DBE8BDC905ABD467A02BBEA42095CACD4DE958" : "whatsAppClone\/",
+    "029A907A7603792637D6CB07A635C9A7A89CCADF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "whatsAppClone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "whatsAppClone.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gsrppaladin\/WhatsAppClone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "029A907A7603792637D6CB07A635C9A7A89CCADF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gsrppaladin\/whatsAppCloneReal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60DBE8BDC905ABD467A02BBEA42095CACD4DE958"
+    }
+  ]
+}

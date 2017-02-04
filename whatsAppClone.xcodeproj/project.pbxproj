@@ -10,6 +10,7 @@
 		BDCC3BE5FDBA407BB98F1066 /* Pods_whatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */; };
 		FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */; };
 		FEE61EC91E4429BD00897690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */; };
+		FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEF32291E45751F0048EFA4 /* Utilities.swift */; };
 		FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C11E42CD5700358DDC /* AppDelegate.swift */; };
 		FEF601C41E42CD5700358DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C31E42CD5700358DDC /* ViewController.swift */; };
 		FEF601C71E42CD5700358DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF601C51E42CD5700358DDC /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.debug.xcconfig"; sourceTree = "<group>"; };
 		FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInRegisterViewController.swift; sourceTree = "<group>"; };
 		FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FEEF32291E45751F0048EFA4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FEF601BE1E42CD5700358DDC /* whatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF601C11E42CD5700358DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEF601C31E42CD5700358DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				FEF601CD1E42CD5700358DDC /* Info.plist */,
 				FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */,
 				FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */,
+				FEEF32291E45751F0048EFA4 /* Utilities.swift */,
 			);
 			path = whatsAppClone;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				FEF601C41E42CD5700358DDC /* ViewController.swift in Sources */,
 				FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */,
+				FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */,
 				FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

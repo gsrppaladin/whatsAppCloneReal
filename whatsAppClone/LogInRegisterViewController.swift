@@ -17,7 +17,7 @@ class LogInRegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordTxtField: UITextField!
     
-    
+    let utilities = Utilities()
     
     
     
@@ -57,6 +57,7 @@ class LogInRegisterViewController: UIViewController {
         //we can unwrap this here because we did testing of this above.
         FIRAuth.auth()?.signIn(withEmail: email!, password: password!, completion: { (user, error) in
             if let error = error {
+                self.utilities.showAlert(title: "Error!", message: error.localizedDescription, vc: self)
                 print("SAM: Error in signing in to Firebase \(error.localizedDescription)")
                 return
             }
