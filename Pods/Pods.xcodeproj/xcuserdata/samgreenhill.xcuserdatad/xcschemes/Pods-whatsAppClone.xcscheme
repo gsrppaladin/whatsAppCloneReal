@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A25F2D102B357FB032D6428633724F59"
+               BlueprintIdentifier = "B0B333F9204DC8CD63CDED183EB72457"
                BuildableName = "Pods_whatsAppClone.framework"
                BlueprintName = "Pods-whatsAppClone"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A25F2D102B357FB032D6428633724F59"
+            BlueprintIdentifier = "B0B333F9204DC8CD63CDED183EB72457"
             BuildableName = "Pods_whatsAppClone.framework"
             BlueprintName = "Pods-whatsAppClone"
             ReferencedContainer = "container:Pods.xcodeproj">
