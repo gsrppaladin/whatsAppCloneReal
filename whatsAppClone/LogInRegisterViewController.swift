@@ -39,17 +39,9 @@ class LogInRegisterViewController: UIViewController {
     
     
     @IBAction func logInBtnPressed(_ sender: Any) {
-        if ((emailTxtField.text?.characters.count)! < 5) {
-            emailTxtField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
+
+        if (!checkInput()) {
             return
-        } else {
-            emailTxtField.backgroundColor = UIColor.white
-        }
-        if ((passwordTxtField.text?.characters.count)! < 5) {
-            passwordTxtField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
-            return
-        } else {
-            passwordTxtField.backgroundColor = UIColor.white
         }
         let email = emailTxtField.text
         let password = passwordTxtField.text
@@ -68,15 +60,70 @@ class LogInRegisterViewController: UIViewController {
     
     
     @IBAction func registerBtnPressed(_ sender: Any) {
+        if (!checkInput()) {
+            return
+        }
 
+        //would normally do this in registration
+        let alert = UIAlertController(title: "Register", message: "Please confirm password...", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "password"
+        }
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
+            let passConfirm = alert.textFields![0] as UITextField
+            if (passConfirm.text!.isEqual(self.passwordTxtField.text!)) {
+                //Reg begins
+        
+            let email = self.emailTxtField.text
+            let password = self.passwordTxtField.text
+        
+                FIRAuth.auth()?.createUser(withEmail: email!, password: password!, completion: { (user, error) in
+                    if let error = error {
+                        self.utilities.showAlert(title: "Error", message: error.localizedDescription, vc: self)
+                    return
+                    }
+                    self.dismiss(animated: true, completion: nil)
+                })
+            }
+            else {
+                self.utilities.showAlert(title: "Error", message: "Passwords not the same!", vc: self)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     
     @IBAction func forgotPasswordBtnPressed(_ sender: Any) {
+        if emailTxtField.text!.isEmpty {
+            let email = self.emailTxtField.text
+            
+            FIRAuth.auth()?.sendPasswordReset(withEmail: email!, completion: { (error) in
+                if let error = error {
+                    self.utilities.showAlert(title: "Error", message: error.localizedDescription, vc: self)
+                    return
+                }
+                self.utilities.showAlert(title: "Success!", message: "Please check you email address", vc: self)
+            })
+        }
     }
     
     
-    
+    func checkInput() -> Bool {
+        if ((emailTxtField.text?.characters.count)! < 5) {
+            emailTxtField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
+            return false
+        } else {
+            emailTxtField.backgroundColor = UIColor.white
+        }
+        if ((passwordTxtField.text?.characters.count)! < 5) {
+            passwordTxtField.backgroundColor = UIColor.init(red: 0.8, green: 0, blue: 0, alpha: 0.2)
+            return false
+        } else {
+            passwordTxtField.backgroundColor = UIColor.white
+        }
+        return true
+    }
     
     
     
