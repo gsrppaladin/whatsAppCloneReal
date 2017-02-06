@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  whatsAppClone
 //
 //  Created by Sam Greenhill on 2/1/17.
@@ -11,7 +11,7 @@ import Firebase
 import UnderKeyboard
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -57,20 +57,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         self.textField.delegate = self
         
+        
+        //going to register for a notification:
+        //add an observer, and it is going to fire whenever the keyboard is used or hidden
+    
+        //observer is the current instance of the class
+        //
         keyboardObserver.willAnimateKeyboard = { height in
         self.bottomLayoutConstraint.constant = height
         }
-        
-        
         keyboardObserver.animateKeyboard = { height in
             self.view.layoutIfNeeded()
-        
-        
         }
-        
-
-
     }
+    
+
+    
+    
+    
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("ended editing")

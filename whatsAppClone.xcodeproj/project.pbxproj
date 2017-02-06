@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BDCC3BE5FDBA407BB98F1066 /* Pods_whatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */; };
 		FE0175491E47D62A005F958B /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */; };
+		FE01754F1E4805F9005F958B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01754E1E4805F9005F958B /* Constants.swift */; };
 		FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */; };
 		FEE61EC91E4429BD00897690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */; };
 		FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEF32291E45751F0048EFA4 /* Utilities.swift */; };
 		FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C11E42CD5700358DDC /* AppDelegate.swift */; };
-		FEF601C41E42CD5700358DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C31E42CD5700358DDC /* ViewController.swift */; };
+		FEF601C41E42CD5700358DDC /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF601C31E42CD5700358DDC /* MainVC.swift */; };
 		FEF601C71E42CD5700358DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF601C51E42CD5700358DDC /* Main.storyboard */; };
 		FEF601C91E42CD5700358DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF601C81E42CD5700358DDC /* Assets.xcassets */; };
 		FEF601CC1E42CD5700358DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF601CA1E42CD5700358DDC /* LaunchScreen.storyboard */; };
@@ -24,12 +25,13 @@
 		5ED43D3314C9E644EDE87AEF /* Pods-whatsAppClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.release.xcconfig"; sourceTree = "<group>"; };
 		FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.debug.xcconfig"; sourceTree = "<group>"; };
 		FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
+		FE01754E1E4805F9005F958B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInRegisterViewController.swift; sourceTree = "<group>"; };
 		FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FEEF32291E45751F0048EFA4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FEF601BE1E42CD5700358DDC /* whatsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF601C11E42CD5700358DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEF601C31E42CD5700358DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEF601C31E42CD5700358DDC /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FEF601C61E42CD5700358DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEF601C81E42CD5700358DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF601CB1E42CD5700358DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE01754A1E480435005F958B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FE01754B1E48043A005F958B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEF601C31E42CD5700358DDC /* MainVC.swift */,
+				FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FE01754C1E480440005F958B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FE01754D1E48045F005F958B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */,
+				FEEF32291E45751F0048EFA4 /* Utilities.swift */,
+				FE01754E1E4805F9005F958B /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		FEF601B51E42CD5600358DDC = {
 			isa = PBXGroup;
 			children = (
@@ -86,16 +121,16 @@
 		FEF601C01E42CD5700358DDC /* whatsAppClone */ = {
 			isa = PBXGroup;
 			children = (
+				FE01754D1E48045F005F958B /* Utilities */,
+				FE01754C1E480440005F958B /* Controller */,
+				FE01754B1E48043A005F958B /* View */,
+				FE01754A1E480435005F958B /* Model */,
 				FEF601C11E42CD5700358DDC /* AppDelegate.swift */,
-				FEF601C31E42CD5700358DDC /* ViewController.swift */,
 				FEF601C51E42CD5700358DDC /* Main.storyboard */,
 				FEF601C81E42CD5700358DDC /* Assets.xcassets */,
 				FEF601CA1E42CD5700358DDC /* LaunchScreen.storyboard */,
 				FEF601CD1E42CD5700358DDC /* Info.plist */,
 				FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */,
-				FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */,
-				FEEF32291E45751F0048EFA4 /* Utilities.swift */,
-				FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */,
 			);
 			path = whatsAppClone;
 			sourceTree = "<group>";
@@ -225,11 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF601C41E42CD5700358DDC /* ViewController.swift in Sources */,
+				FEF601C41E42CD5700358DDC /* MainVC.swift in Sources */,
 				FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */,
 				FE0175491E47D62A005F958B /* UnderKeyboardDistrib.swift in Sources */,
 				FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */,
 				FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */,
+				FE01754F1E4805F9005F958B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

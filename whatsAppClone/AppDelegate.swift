@@ -11,9 +11,6 @@
 import UIKit
 import Firebase
 
-
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -59,11 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  User registration
  Live updates from Firebase. 
  Learn a whole lot more about creaeting apps 
- 
- 
- 
- 
- 
  
  
  */
