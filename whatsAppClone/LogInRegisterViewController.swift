@@ -19,7 +19,11 @@ class LogInRegisterViewController: UIViewController {
     
     let utilities = Utilities()
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        if let user = FIRAuth.auth()?.currentUser {
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

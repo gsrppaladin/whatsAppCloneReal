@@ -10,6 +10,7 @@
 		BDCC3BE5FDBA407BB98F1066 /* Pods_whatsAppClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C3D659379CD918485FF03D /* Pods_whatsAppClone.framework */; };
 		FE0175491E47D62A005F958B /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */; };
 		FE01754F1E4805F9005F958B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE01754E1E4805F9005F958B /* Constants.swift */; };
+		FE0F26001E4964630016AF32 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0F25FF1E4964630016AF32 /* AppState.swift */; };
 		FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */; };
 		FEE61EC91E4429BD00897690 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */; };
 		FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEF32291E45751F0048EFA4 /* Utilities.swift */; };
@@ -26,6 +27,7 @@
 		FCE6437968F0171854D538A0 /* Pods-whatsAppClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsAppClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatsAppClone/Pods-whatsAppClone.debug.xcconfig"; sourceTree = "<group>"; };
 		FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
 		FE01754E1E4805F9005F958B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE0F25FF1E4964630016AF32 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		FEE61EC61E4422F800897690 /* LogInRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInRegisterViewController.swift; sourceTree = "<group>"; };
 		FEE61EC81E4429BD00897690 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FEEF32291E45751F0048EFA4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				FE0175481E47D62A005F958B /* UnderKeyboardDistrib.swift */,
 				FEEF32291E45751F0048EFA4 /* Utilities.swift */,
 				FE01754E1E4805F9005F958B /* Constants.swift */,
+				FE0F25FF1E4964630016AF32 /* AppState.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				FEF601C41E42CD5700358DDC /* MainVC.swift in Sources */,
 				FEE61EC71E4422F800897690 /* LogInRegisterViewController.swift in Sources */,
+				FE0F26001E4964630016AF32 /* AppState.swift in Sources */,
 				FE0175491E47D62A005F958B /* UnderKeyboardDistrib.swift in Sources */,
 				FEEF322A1E45751F0048EFA4 /* Utilities.swift in Sources */,
 				FEF601C21E42CD5700358DDC /* AppDelegate.swift in Sources */,

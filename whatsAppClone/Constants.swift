@@ -13,7 +13,8 @@ struct Constants {
     struct messageFields {
         static let dateTime = "dateTime"
         static let text = "text"
-        
+        static let name = "name"
+        static let photoURL = "photoURL"
     }
     
     
